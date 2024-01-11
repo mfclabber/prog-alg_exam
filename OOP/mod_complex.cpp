@@ -1,4 +1,4 @@
-// 3. Реализовать операции +=, -= для комплексных чисел.
+// 3. ╨а╨╡╨░╨╗╨╕╨╖╨╛╨▓╨░╤В╤М ╨╛╨┐╨╡╤А╨░╤Ж╨╕╨╕ +=, -= ╨┤╨╗╤П ╨║╨╛╨╝╨┐╨╗╨╡╨║╤Б╨╜╤Л╤Е ╤З╨╕╤Б╨╡╨╗.
 
 #include <iostream>
 #include <math.h>
@@ -28,20 +28,20 @@ ComplexNumber::ComplexNumber(double a, double b) {
 }
  
 void ComplexNumber::read() {
-    cout << "Введите вещественную часть: ";
+    cout << "╨Т╨▓╨╡╨┤╨╕╤В╨╡ ╨▓╨╡╤Й╨╡╤Б╤В╨▓╨╡╨╜╨╜╤Г╤О ╤З╨░╤Б╤В╤М: ";
     cin >> a;
-    cout << "Введите мнимую часть: ";
+    cout << "╨Т╨▓╨╡╨┤╨╕╤В╨╡ ╨╝╨╜╨╕╨╝╤Г╤О ╤З╨░╤Б╤В╤М: ";
     cin >> b;
 }
  
 void ComplexNumber::print() {
-    cout << a << (b > 0? "+" : "") << b << "*i\n"; //здесь использован тернарный оператор, можно заменить простым if..else
+    cout << a << (b > 0? "+" : "") << b << "*i\n"; //╨╖╨┤╨╡╤Б╤М ╨╕╤Б╨┐╨╛╨╗╤М╨╖╨╛╨▓╨░╨╜ ╤В╨╡╤А╨╜╨░╤А╨╜╤Л╨╣ ╨╛╨┐╨╡╤А╨░╤В╨╛╤А, ╨╝╨╛╨╢╨╜╨╛ ╨╖╨░╨╝╨╡╨╜╨╕╤В╤М ╨┐╤А╨╛╤Б╤В╤Л╨╝ if..else
 }
  
 double ComplexNumber::mod() {
 
     double result = sqrt(pow(this->a, 2) + pow(this->b, 2));
-    cout << "Модуль: " << result;
+    cout << "╨Ь╨╛╨┤╤Г╨╗╤М: " << result;
     return result;
 }
 
@@ -50,7 +50,7 @@ int main() {
     int answer;
     double result;
 
-    cout << "Число\n";
+    cout << "╨з╨╕╤Б╨╗╨╛\n";
     a.read();
 
     result = a.mod();
